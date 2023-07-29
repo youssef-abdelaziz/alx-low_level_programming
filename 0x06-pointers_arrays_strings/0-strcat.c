@@ -1,12 +1,13 @@
 #include "main.h"
 /**
  * _strcat - function that concatenates
- * two strings.
+ *       two strings.
+ *
  * @dest: pointer to destnation input
  * @src: pointer to source input
  *
  * Return: pointer to resulting string @dest
- */
+*/
 
 char *_strcat (char *dest, char *src)
 {
@@ -15,7 +16,11 @@ char *_strcat (char *dest, char *src)
 	/*find the size of dest array*/
 	while (dest [c])
 		c++;
+
+	/* iterate through each src array value without the null type*/
 	for (c2 = 0; src[c2]; c2++)
+		/*aprend src[c2] to dest[c] while overwritting the null byte indest*/
 		dest[C++] = src[c2];
+
 	return (dest);
 }
